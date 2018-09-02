@@ -17,8 +17,5 @@ var fs   = require('fs');
 
 var myReadStream =  fs.createReadStream (`${__dirname}/sample.txt`, 'ascii');
 var myWriteStream = fs.createWriteStream(`${__dirname}/writeme.txt`,'ascii');
-var count = 0;
-myReadStream.on('data',function(chunk){
-  myWriteStream.write(chunk);
-  count++;
-});
+var benis = "";
+myReadStream.pipe(myWriteStream);
