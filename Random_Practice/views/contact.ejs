@@ -28,14 +28,14 @@
   <p>Size: <%= queryString.size %></p>
 
 
-  <form id="contact-form">
+  <form id="contact-form" method="POST" action="/contact">
     <label for="who">What's the name</label><br />
     <input type="text" name="name" value="<%= queryString.name %>"><br />
     <label for="department">What size?</label><br />
     <input type="text" name="size" value="<%= queryString.size %>"><br />
     <label for="age">How old?</label><br />
     <input type="text" name="age" value="<%= queryString.age %>"><br />
-    <input type="button" name="confirm" value="<%= queryString.eyeColor %>" />
+    <input type="submit" name="eyeColor" value="<%= queryString.eyeColor %>" />
   </form>
 
 

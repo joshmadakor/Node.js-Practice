@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: skyblue;
+      font-family: verdana;
+      color: #fff;
+      padding: 30px
+    }
+    h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    p {
+      font-size: 16px;
+      text-align: center
+    }
+  </style>
+</head>
+<body>
+  <% include ./partials/nav.ejs %>
+  <h1>Wow. Contact us</h1></br>
+
+
+
+  <p>Thanks for getting in touch with <%= data.name %></p>
+  <p>Age: <%=  data.age %></p>
+  <p>Size: <%= data.size %></p>
+  <p>Name: <%= data.name %></p>
+  <p>Eye Color: <%= data.eyeColor %></p>
+
+  <a href='www.reddit.com'>josh.madakor@gmail.com</a>
+</body>
+</html>
