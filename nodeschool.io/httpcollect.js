@@ -24,3 +24,5 @@ http.get(url, function(response){
     console.log(myData);
   });
 });
+
+console.log(myData);
